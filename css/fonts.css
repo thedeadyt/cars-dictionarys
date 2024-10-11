@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'dodger3';
+    src: url('../fonts/dodger3.eot');
+    src: url('../fonts/dodger3.eot') format('embedded-opentype'),
+         url('../fonts/dodger3.woff2') format('woff2'),
+         url('../fonts/dodger3.woff') format('woff'),
+         url('../fonts/dodger3.ttf') format('truetype'),
+         url('../fonts/dodger3.svg#dodger3') format('svg');
+}

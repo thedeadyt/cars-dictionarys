@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cars Dictionary - Qui sommes-nous ?</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./../css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./../css/fonts.css'>
+    <style>
+        /* Style de base */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style pour le header */
+        header {
+            height: 60px;
+            position: fixed;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Légère ombre pour distinguer */
+        }
+        header h1 a {
+            text-decoration: none;
+            color: rgb(156, 156, 156);
+        }
+
+        header .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        header .menu ul li {
+            margin-left: 20px;
+        }
+        header .menu ul li a {
+            color: rgb(156, 156, 156);
+            text-decoration: none;
+        }
+
+        /* Style pour la section principale */
+        .main {
+            padding-top: 80px; /* Ajoute de l'espace sous le header */
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto; /* Centre le contenu */
+        }
+
+        h2 {
+            color: #333;
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6em;
+            color: #666;
+        }
+
+        /* Style de la section "Qui sommes-nous ?" */
+        .about-us {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 128, 255, 0.5); /* Ombre en bleu (#0080ff) */
+        }
+
+        .about-us h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .about-us{
+            margin-top: 10%;
+        }
+          /* Media queries pour la responsivité */
+          @media (max-width: 768px) {
+            header {
+                height: 50px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            header h1 a {
+                font-size: 1.2em;
+            }
+
+            header .menu ul li {
+                margin-left: 10px;
+            }
+
+            .main {
+                padding: 10px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .about-us {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                height: 50px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+            header h1 a {
+                font-size: 1em;
+            }
+
+            header .menu ul {
+                flex-direction: column;
+            }
+
+            header .menu ul li {
+                margin-left: 0;
+                margin-top: 5px;
+            }
+
+            .main {
+                padding: 5px;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            p {
+                font-size: 0.9em;
+                line-height: 1.5em;
+            }
+
+            .about-us {
+                padding: 10px;
+            }
+        }
+
+    </style>
+    <style>
+        /* Add some basic styling to the form */
+        form {
+          max-width: 600px;
+          margin: 40px auto;
+          padding: 20px;
+          background-color: #f9f9f9;
+          border: 1px solid #ccc;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+      
+        /* Style the input fields */
+        input, textarea {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 20px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+      
+        /* Add a blue border when the user focuses on the input fields */
+        input:focus, textarea:focus {
+          border-color: #0080ff;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+      
+        /* Make the message textarea full-width */
+        textarea {
+          height: 150px;
+          resize: vertical;
+        }
+      
+        /* Add some space between the form elements */
+        label {
+          margin-bottom: 10px;
+          display: block;
+        }
+      
+        /* Style the submit button */
+        input[type="submit"] {
+          background-color: #0080ff;
+          color: #ffffff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      
+        input[type="submit"]:hover {
+          background-color: #0080ff;
+        }
+        .btn-telecharger {
+  /* existing styles */
+  background-color: #0080ff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+  /* add these properties to center the button */
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+      </style>
+</head>
+<body>
+    <header>
+        <h1><a href="../index.php">cars-dictionary</a></h1>
+        <div class="menu">
+            <ul>
+                <li><a href="./allmarque.php">Marque</a></li>
+                <li><a href="./qui sommes-nous.html">Qui sommes-nous ?</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main">
+        <section class="about-us">
+            <h2>Qui sommes-nous ?</h2>
+            <p>
+                Bienvenue sur Cars Dictionary, votre guide de confiance pour explorer le vaste monde des voitures. 
+                Nous sommes une équipe de passionnés d'automobiles, avec un seul objectif : rassembler en un seul endroit 
+                des informations complètes et fiables sur les voitures de toutes les marques et de toutes les époques.
+            </p>
+            <p>
+                Nous croyons que chaque voiture raconte une histoire unique. Que ce soit les voitures classiques qui ont marqué l'histoire, 
+                ou les innovations modernes qui redéfinissent l'industrie, notre mission est de vous fournir un accès facile 
+                à des fiches détaillées sur une grande diversité de modèles.
+            </p>
+            <h3>Notre équipe</h3>
+            <p>
+                Composée de collectionneurs, de mécaniciens et de spécialistes, notre équipe travaille sans relâche pour enrichir 
+                notre base de données et garantir des informations précises. Nous partageons tous une passion commune pour les véhicules 
+                et nous nous engageons à rendre cette passion accessible à tous.
+            </p>
+            <p>
+                Que vous soyez un passionné ou un simple curieux, nous espérons que vous trouverez ici des réponses à toutes vos questions 
+                sur les voitures. N'hésitez pas à nous contacter si vous souhaitez en savoir plus ou si vous avez des suggestions !
+            </p>
+        
+            <h2>Contactez nous</h2>
+        
+            <form action="mailto:Alexis.RODRIGUES-DOS-REIS@iut-tarbes.fr" method="post" enctype="text/plain">
+                <label for="subject">Objet :</label>
+                <input type="text" id="subject" name="subject"><br><br>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message"></textarea><br><br>
+                <input type="submit" value="Envoyer">
+            </form>
+            <a href="../cars-dictionary.zip" download="cars-dictionary.zip">
+                <button class="btn-telecharger">Télécharger le fichier ZIP</button>
+              </a>
+        </section>
+    </div>
+</body>
+</html>
